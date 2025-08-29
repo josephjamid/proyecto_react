@@ -52,7 +52,7 @@ export default function Register() {
               className="w-full p-2 rounded-md border border-[#2d7a6b] focus:outline-none focus:border-[#4a9d8e] focus:ring-1 focus:ring-[#7bc4b8]"
             />
           </div>
-    <h1>hola si sirvio el pool</h1>
+    
           <div className="mb-25px relative">
             <label className="block text-[#0d4f4c] font-medium">Apellido</label>
             <input
