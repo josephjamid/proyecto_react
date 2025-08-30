@@ -33,7 +33,7 @@ export default function Register() {
       return;
     }
     setError("");
-    alert("Usuario registrado con éxito 🎉");
+    alert("Usuario registrado con éxito");
   };
 
   return (
