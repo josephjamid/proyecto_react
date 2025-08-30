@@ -1,27 +1,20 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState,} from "react";
 
 export default function Register() {
   const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
-  const [nombre, setNombre] = useState("");
-  const [apellido, setApellido] = useState("");
   const [email, setEmail] = useState("");
 
-  
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!email || !password ) {
+    if (!email || !password) {
       setError("todos los campos son obligatorios");
       return;
-
     }
 
     setError("");
     alert("Inicio de Sesion Exitoso");
-
-    
   };
 
   return (
@@ -30,10 +23,6 @@ export default function Register() {
         <h1 className="text-2xl font-semibold text-center">Inicio de Sesion</h1>
 
         <form onSubmit={handleSubmit}>
-        
-
-        
-
           <div className="mb-25px relative">
             <label className="block text-[#0d4f4c] font-medium">
               Correo electrónico
@@ -60,23 +49,19 @@ export default function Register() {
             />
           </div>
 
-        
-
           {error && <p className="text-red-500 text-sm">{error}</p>}
 
-          
-            <button
-              type="submit"
-              className="w-full bg-[#2d7a6b] text-white py-2 rounded-md hover:bg-[#0d4f4c] transition"
-            >
-              Iniciar Sesion
-            </button>
-          
+          <button
+            type="submit"
+            className="w-full bg-[#2d7a6b] text-white py-2 rounded-md hover:bg-[#0d4f4c] transition"
+          >
+            Iniciar Sesion
+          </button>
         </form>
 
         <p className="text-center mt-4 text-sm text-gray-600">
           ¿No tienes una cuenta?{" "}
-          <Link to="/" className="text-[#0d4f4c] font-semibold hover:underline">
+          <Link to="/register" className="text-[#0d4f4c] font-semibold hover:underline">
             Registrate con nosotros
           </Link>
         </p>
