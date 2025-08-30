@@ -124,7 +124,7 @@ export default function Register() {
         <p className="text-center mt-4 text-sm text-gray-600">
           ¿Ya tienes una cuenta?{" "}
           <Link
-            to="/login"
+            to="/"
             className="text-[#0d4f4c] font-semibold hover:underline  "
           >
             Inicia sesión
